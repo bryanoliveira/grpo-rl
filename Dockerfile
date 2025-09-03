@@ -36,4 +36,4 @@ RUN uv sync && uv sync --extra mujoco
 RUN chmod +x launch_all_cpus.sh
 
 # Default command
-CMD ["bash", "launch_all_cpus.sh"]
+CMD ["bash", "experiment.sh", "1", "0"]
