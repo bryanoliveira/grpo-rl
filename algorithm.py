@@ -36,7 +36,7 @@ def add_args(parser):
                         help="if toggled, this experiment will be tracked with Weights and Biases")
     parser.add_argument("--wandb-project-name", type=str, default="grpo",
                         help="the wandb's project name")
-    parser.add_argument("--wandb-entity", type=str, default="bryanoliveira",
+    parser.add_argument("--wandb-entity", type=str, default=None,
                         help="the entity (team) of wandb's project")
     parser.add_argument("--capture-video", type=bool, default=False, action=argparse.BooleanOptionalAction,
                         help="whether to capture videos of the agent performances (check out `videos` folder)")
